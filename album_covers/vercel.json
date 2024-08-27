@@ -1,13 +1,13 @@
 {
     "builds": [{
-        "src": "sakuga/wsgi.py",
+        "src": "album_covers/wsgi.py",
         "use": "@vercel/python",
         "config": { "maxLambdaSize": "15mb" }
     }],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "sakuga/wsgi.py"
+            "dest": "album_covers/wsgi.py"
         }
     ]
 }
